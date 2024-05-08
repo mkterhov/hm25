@@ -11,7 +11,7 @@ int main() {
     ab.walk();
     ab.swim();
 
-    FunctorA a;
+    FunctorA a{ 1000 };
     std::cout << "Functor " << a(1, 23) << std::endl;
 
     return 0;
