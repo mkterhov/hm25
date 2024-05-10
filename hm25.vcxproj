@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Amphibian.cpp" />
     <ClCompile Include="Animal.cpp" />
+    <ClCompile Include="ArrayCm.cpp" />
     <ClCompile Include="Fish.cpp" />
     <ClCompile Include="hm25.cpp" />
     <ClCompile Include="Lizard.cpp" />
@@ -136,6 +137,7 @@
   <ItemGroup>
     <ClInclude Include="Amphibian.h" />
     <ClInclude Include="Animal.h" />
+    <ClInclude Include="ArrayCm.h" />
     <ClInclude Include="Fish.h" />
     <ClInclude Include="FunctorA.h" />
     <ClInclude Include="Lizard.h" />
