@@ -20,6 +20,21 @@ int main() {
     arr2[2] = 42;
     std::cout << "Modified Copied Array: " << arr2 << std::endl;
 
+
+    Fish fish1("Fish", 10);
+    Lizard lizard1("lizard", "North Africa");
+    Amphibian amphibian1("Frog", "Swamp", 5);
+
+    std::cout << "Instance count after creating objects: " << Animal::getCount() << std::endl;
+
+    Fish fish2 = fish1;
+    Lizard lizard2 = lizard1;
+    Amphibian amphibian2 = amphibian1;
+
+    std::cout << "Instance count after copying objects: " << Animal::getCount() << std::endl;
+
+
+
     return 0;
 }
 

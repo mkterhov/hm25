@@ -5,6 +5,11 @@ Fish::Fish(const std::string& name, const int& needOxygen) : Animal(name), m_nee
     std::cout << "Fish Constructor: " << name << " needs " << m_needOxygen << " of oxygen" << std::endl;
 }
 
+Fish::Fish(const Fish& obj) : Animal(obj), m_needOxygen(obj.m_needOxygen) {
+    std::cout << "Fish Copy Constructor: " << m_name << " needs " << m_needOxygen << " of oxygen" << std::endl;
+}
+
+
 void Fish::voice() const {
     std::cout << m_name << ": I am a fish" << std::endl;
 }

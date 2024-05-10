@@ -37,16 +37,18 @@ const int& ArrayCm::operator[](int index) const {
 std::ostream& operator<<(std::ostream& os, const ArrayCm& arr) {
     os << "[";
     for (size_t i = 0; i < arr.getSize(); ++i) {
+        os << i << ":";
+
         os << arr[i];
         if (i != arr.getSize() - 1) {
             os << ", ";
         }
     }
     os << "]";
+
     return os;
 }
 
-// Getter for the array size
 int ArrayCm::getSize() const {
     return size;
 }

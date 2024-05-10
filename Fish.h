@@ -6,6 +6,7 @@ private:
     const int& m_needOxygen;
 public:
     Fish(const std::string&, const int&);
+    Fish(const Fish&);
     void voice() const override;
     virtual void swim() const;
     virtual bool filterOxygen(const int& amountOxygen);
